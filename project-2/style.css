@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css variables */
+:root{
+    --navbar-height:59px;
+
+}
+/* navigation bar */
+#navbar{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    
+}
+/* logo and image */
+.logo{
+    margin:10px 20px;
+
+}
+.logo img{
+    height:50px;
+    opacity: 10;
+    border-radius: 150px;
+    margin-top: 10px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Geologica', sans-serif;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 20px;
+}
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#navbar::before{
+    content:"";
+    background: url("https://i1.wp.com/itsawheatlesslife.com/wp-content/uploads/2017/02/Food-background.jpg?w=3000&ssl=1") no-repeat center center/cover;
+    
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.4;
+    
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: aliceblue;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 350px;
+    align-items: center;
+    justify-content: center;    
+}
+#home::before{
+    content:"";
+    background: url("https://i1.wp.com/itsawheatlesslife.com/wp-content/uploads/2017/02/Food-background.jpg?w=3000&ssl=1") no-repeat center center/cover;
+    position: absolute;
+    height: 55%;
+    width:100%;
+    z-index: -1;
+    opacity:0.99;
+}
+.h-primary{
+    font-size:2.8rem;
+    padding:12px;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+
+}
+.btn{
+    padding: 6px 20px;
+    border:2px solid white;
+    background-color: brown;
+    color: white;
+    margin:17px;
+    border-radius: 13px;
+    cursor: pointer;
+    font-size: 1.2rem;
+
+}
+
+.section{
+    display: flex;
+    margin: 20px;
+    
+   
+}
+.first{
+    border: 2px solid brown;
+    width:33%;
+    height:340px;
+    margin-left: 3px;
+    border-radius: 20px;
+  
+}
+ h1{
+    text-align: center;
+   font-size: 3rem;
+   margin: 5px;
+   font-family: 'Bree Serif', serif;
+}
+.section .first img{
+    width:60%;
+    height:200px;
+   padding: 10px;
+   padding-left: 30px;
+   margin-left: 50px;
+   border-radius: 3000px;
+   /* border: 2px solid red; */
+   
+}
+.first h2{
+    text-align: center;
+   font-size: 1.6rem;
+   margin: 5px;
+   font-family: 'Bree Serif', serif;
+}
+section p{
+    text-align: center;
+   font-size: 1rem;
+   margin: 5px;
+     font-family: 'Bree Serif', serif;
+   
+
+}
+#our_clients{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 300px;
+    position: relative;
+   
+    height: 350px;
+    align-items: center;
+    justify-content: center;   
+
+}
+#our_clients::before{
+    content:"";
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqC52RpE92k8AprBpZsU9ePdm3CxOcsX6yIoV74VQXe9PIuCd3mX5EQbTmrQY-dp3zlds&usqp=CAU") no-repeat center center/cover;
+    position: absolute;
+    height: 80%;
+    width:100%;
+    z-index: -1;
+    opacity:0.99;
+    margin-top: 3px;
+}
+.client_heading{
+    text-align: center;
+    justify-content: center;
+   font-size: 3rem;
+   margin: 3px;
+   font-family: 'Bree Serif', serif;
+
+}
+.clients{
+    display: flex;
+}
+.clients .first_clients img{
+    height:200px;
+    width:200px;
+    padding: 20px;
+    border-radius: 300px;
+}
+
+
+
+
+/* contact us section */
+
+.contact_box{
+   position: relative;
+   display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 430px;
+    align-items: center;
+    justify-content: center;
+   
+}
+.contact_box::before{
+    content:"";
+    background: url("https://media.istockphoto.com/id/1049658692/photo/contact-us.jpg?s=1024x1024&w=is&k=20&c=rJthBvVzIgZiOsA6jcpd0wVuiMihfYAf2m-5zrl9AUE=") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+   
+    opacity:0.5;
+
+
+}
+.contact_box form{
+    /* border: 2px solid black; */
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 600px;
+    padding-left: 200px;  
+    font-size: 20px;
+    font-weight:bolder; 
+
+}
+.contact_box form input{
+    font-size: 20px;
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.contact_box form label{
+    font-size: 30px;
+    padding: 10px;
+}
+.contact_box form textarea{
+    font-size: 30px;
+    padding: -1px;
+    border-radius: 5px solid black;
+   
+}
+.contact_heading{
+    font-family: 'Bree Serif', serif;
+}
+footer{
+    background-color: black;
+    color: aliceblue;
+    padding: 9px 450px;
+}
